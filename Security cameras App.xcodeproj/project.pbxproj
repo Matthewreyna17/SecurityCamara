@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		342F6DF029D2FC7F00A6277C /* Security_cameras_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F6DEF29D2FC7F00A6277C /* Security_cameras_AppApp.swift */; };
+		342F6DF029D2FC7F00A6277C /* Security_cameras_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F6DEF29D2FC7F00A6277C /* Security_cameras_App.swift */; };
 		342F6DF229D2FC7F00A6277C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F6DF129D2FC7F00A6277C /* ContentView.swift */; };
 		342F6DF429D2FC8100A6277C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342F6DF329D2FC8100A6277C /* Assets.xcassets */; };
 		342F6DF729D2FC8100A6277C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342F6DF629D2FC8100A6277C /* Preview Assets.xcassets */; };
+		347C3EDF29E5119300D34BD3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347C3EDE29E5119300D34BD3 /* Profile.swift */; };
+		347C3EE129E511A000D34BD3 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 347C3EE029E511A000D34BD3 /* Auth0.plist */; };
+		347C3EE329E511FA00D34BD3 /* Auth0.swift in Resources */ = {isa = PBXBuildFile; fileRef = 347C3EE229E511FA00D34BD3 /* Auth0.swift */; };
+		347C3EE629E5136600D34BD3 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 347C3EE529E5136600D34BD3 /* Auth0 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		342F6DEC29D2FC7F00A6277C /* Security cameras App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Security cameras App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		342F6DEF29D2FC7F00A6277C /* Security_cameras_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security_cameras_AppApp.swift; sourceTree = "<group>"; };
+		342F6DEF29D2FC7F00A6277C /* Security_cameras_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security_cameras_App.swift; sourceTree = "<group>"; };
 		342F6DF129D2FC7F00A6277C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		342F6DF329D2FC8100A6277C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		342F6DF629D2FC8100A6277C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		347C3EDE29E5119300D34BD3 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		347C3EE029E511A000D34BD3 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		347C3EE229E511FA00D34BD3 /* Auth0.swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Auth0.swift; path = "../../../../Library/Developer/Xcode/DerivedData/iOS_SwiftUI_Login-ctklbfhjjveigucosojdmwplctxo/SourcePackages/checkouts/Auth0.swift"; sourceTree = "<group>"; };
+		347D1B6729E4F592000D822C /* Security-cameras-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Security-cameras-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347C3EE629E5136600D34BD3 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +60,11 @@
 		342F6DEE29D2FC7F00A6277C /* Security cameras App */ = {
 			isa = PBXGroup;
 			children = (
-				342F6DEF29D2FC7F00A6277C /* Security_cameras_AppApp.swift */,
+				342F6DEF29D2FC7F00A6277C /* Security_cameras_App.swift */,
 				342F6DF129D2FC7F00A6277C /* ContentView.swift */,
+				347C3EDE29E5119300D34BD3 /* Profile.swift */,
+				347C3EE029E511A000D34BD3 /* Auth0.plist */,
+				347D1B6729E4F592000D822C /* Security-cameras-App-Info.plist */,
 				342F6DF329D2FC8100A6277C /* Assets.xcassets */,
 				342F6DF529D2FC8100A6277C /* Preview Content */,
 			);
@@ -62,6 +74,7 @@
 		342F6DF529D2FC8100A6277C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				347C3EE229E511FA00D34BD3 /* Auth0.swift */,
 				342F6DF629D2FC8100A6277C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -83,6 +96,9 @@
 			dependencies = (
 			);
 			name = "Security cameras App";
+			packageProductDependencies = (
+				347C3EE529E5136600D34BD3 /* Auth0 */,
+			);
 			productName = "Security cameras App";
 			productReference = 342F6DEC29D2FC7F00A6277C /* Security cameras App.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 342F6DE329D2FC7E00A6277C;
+			packageReferences = (
+				347C3EE429E5136600D34BD3 /* XCRemoteSwiftPackageReference "Auth0" */,
+			);
 			productRefGroup = 342F6DED29D2FC7F00A6277C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347C3EE329E511FA00D34BD3 /* Auth0.swift in Resources */,
 				342F6DF729D2FC8100A6277C /* Preview Assets.xcassets in Resources */,
+				347C3EE129E511A000D34BD3 /* Auth0.plist in Resources */,
 				342F6DF429D2FC8100A6277C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				342F6DF229D2FC7F00A6277C /* ContentView.swift in Sources */,
-				342F6DF029D2FC7F00A6277C /* Security_cameras_AppApp.swift in Sources */,
+				347C3EDF29E5119300D34BD3 /* Profile.swift in Sources */,
+				342F6DF029D2FC7F00A6277C /* Security_cameras_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +289,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Security cameras App/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6V8W6CZD5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Security-cameras-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +319,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Security cameras App/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6V8W6CZD5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Security-cameras-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		347C3EE429E5136600D34BD3 /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		347C3EE529E5136600D34BD3 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347C3EE429E5136600D34BD3 /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 342F6DE429D2FC7E00A6277C /* Project object */;
 }
