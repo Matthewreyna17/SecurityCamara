@@ -23,8 +23,8 @@ struct ContentView: View {
     //streams video from AWS S3 bucket using domain name
     let videos = [
         AVPlayer(url: URL(string: "https://dwihl047bnhup.cloudfront.net/mixkit-mother-duck-swimming-through-the-water-with-her-ducklings-48859-medium.mp4")!),
-        AVPlayer(url: URL(string: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_5mb.mp4")!),
-        AVPlayer(url: URL(string: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_5mb.mp4")!)
+        AVPlayer(url: URL(string: "https://dwihl047bnhup.cloudfront.net/vecteezy_crow-roaming-around-noah-s-ark-cartoon_18852914_727.mp4")!),
+        AVPlayer(url: URL(string: "https://dwihl047bnhup.cloudfront.net/vecteezy_a-happy-young-african-american-woman-dances-with-her-arms-side-to-side-in-front-of-a-green-screen_1788201.mp4")!)
     ]
     //setting variable for date setting on overlay of app
     var dateFormatter: DateFormatter {
